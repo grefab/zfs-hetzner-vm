@@ -1,7 +1,5 @@
 # zfs-hetzner-vm
 
-[![shellcheck](https://github.com/grefab/zfs-hetzner-vm/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/grefab/zfs-hetzner-vm/actions/workflows/shellcheck.yml)
-
 Scripts to install Debian 11, 10 or Ubuntu 20, 18 with ZFS root on Hetzner root servers (virtual and dedicated).<br/>
 __WARNING:__ all data on the disk will be destroyed.
 
@@ -15,7 +13,7 @@ __WARNING:__ all data on the disk will be destroyed.
 Ubuntu 22 LTS minimal setup with SSH server
 
 ````bash
-wget -qO- https://raw.githubusercontent.com/grefab/zfs-hetzner-vm/master/hetzner-ubuntu20-zfs-setup.sh | bash -
+wget -qO- https://raw.githubusercontent.com/grefab/zfs-hetzner-vm/master/hetzner-ubuntu22-zfs-setup.sh | bash -
 ````
 
 Debian 11 minimal setup with SSH server
