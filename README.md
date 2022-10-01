@@ -12,6 +12,7 @@ __WARNING:__ all data on the disk will be destroyed.
 
 Ubuntu 22 LTS minimal setup with SSH server
 
+call `zpool` on rescue console to have it install zfs before running this script
 ````bash
 wget -qO- https://raw.githubusercontent.com/grefab/zfs-hetzner-vm/master/hetzner-ubuntu22-zfs-setup.sh | bash -
 ````
