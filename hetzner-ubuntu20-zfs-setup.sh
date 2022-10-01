@@ -202,7 +202,7 @@ function select_disks {
       menu_entries_option+=("$disk_id" "($block_device_basename)" "$disk_selection_status")
     done
 
-    local dialog_message="Select the ZFS devices (multiple selections will be in mirror).
+    local dialog_message="Select the ZFS devices (multiple selections will be in raidz1).
 
 Devices with mounted partitions, cdroms, and removable devices are not displayed!
 "
@@ -504,7 +504,7 @@ echo "======= create zfs pools and datasets =========="
   done
 
   if [[ ${#v_selected_disks[@]} -gt 1 ]]; then
-    pools_mirror_option=mirror
+    pools_mirror_option=raidz1
   else
     pools_mirror_option=
   fi
